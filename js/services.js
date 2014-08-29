@@ -169,22 +169,24 @@
 	* Mail service
 	***************************************/
 	
-	myResumeServices.factory('mailManager', function($http){
-		return {
-			getContactTemplates : function(){
-				return {contactForm:'views/contactForm.html', contactConfirm:'views/contactConfirmation.html'};
-			},
-			submitContactForm : function(data, callbackSuccess, callbackError){
-				$http.post('application/email.php', {name:data.name, email:data.email, message:data.message})
-				.success(function(){
-					callbackSuccess();
-				})
-				.error(function(){
-					callbackError();
-				});
-			}
-		};
-	});
+      myResumeServices.factory('mailManager', function($http){
+        return {
+          getContactTemplates : function(){
+            return {contactForm:'views/contactForm.html', contactConfirm:'views/contactConfirmation.html'};
+          },
+          submitContactForm : function(data, callbackSuccess, callbackError){
+            $http.post('application/email.php', {name:data.name, email:data.email, message:data.message})
+            .success(function(){
+              alert(name + ':: ' + data.name);
+              callbackSuccess();
+            })
+            .error(function(){
+              alert(name + ':: ' + data.email);
+              callbackError();
+            });
+          }
+        };
+      });
 	
 	/**************************************
 	* Timeline service
