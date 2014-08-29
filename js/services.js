@@ -13,7 +13,7 @@
 					name             : 'Xavier Artot',
 					birthDate        : '12/06/1970',
 					startWorkingDate : '01/01/2009',
-					experience       : "$1 years, $2 experiences years"
+					experience       : "$1 years, $2 years experiences"
 				};
 				var age = utility.getDurationInYears(false, profileData.birthDate);
 				var workExperience = utility.getDurationInYears(true, profileData.startWorkingDate);
