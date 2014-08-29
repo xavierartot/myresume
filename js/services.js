@@ -9,11 +9,11 @@
 		return {
 			getProfile : function() {
 				var profileData = {
-					title            : 'Front End developer !',
+					title            : 'Front End Developer !',
 					name             : 'Xavier Artot',
 					birthDate        : '12/06/1970',
 					startWorkingDate : '01/01/2009',
-					experience       : "$1 ans, $2 ans d'expérience"
+					experience       : "$1 years, $2 experiences years"
 				};
 				var age = utility.getDurationInYears(false, profileData.birthDate);
 				var workExperience = utility.getDurationInYears(true, profileData.startWorkingDate);
@@ -27,10 +27,10 @@
 			},
 			getTagCloud : function() {
 				var tagCloud = [
-					{label:'HTML5', level:0}, {label:'AJAX', level:0}, {label:'WordPress', level:2}, {label:'CSS3', level:0}, 
-					{label:'CSS', level:0}, {label:'Shell', level:1},{label:'Unix', level:0}, {label:'SQL', level:0}, {label:'REST', level:0},
-					{label:'Javascript', level:0}, {label:'JQuery', level:1}, {label:'AngularJS', level:0}, {label:'JSON', level:0},
-					{label:'PHP', level:0}, {label:'Apache', level:0}
+					{label:'HTML5', level:1}, {label:'AJAX', level:1}, {label:'WordPress', level:1}, {label:'CSS3', level:0}, 
+					{label:'CSS', level:2}, {label:'Shell', level:1},{label:'Unix', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
+					{label:'Javascript', level:2}, {label:'JQuery', level:1}, {label:'AngularJS', level:0}, {label:'JSON', level:1},
+					{label:'PHP', level:2}, {label:'Apache', level:0}
 				];
 				return tagCloud;
 			},
@@ -42,7 +42,7 @@
 					},
 					{
 					 title:'Langages et outils',
-					 specificSkills:['Grunt', 'Vim', 'Git', 'shell Unix']
+					 specificSkills:['Grunt', 'Vim', 'Git', 'shell Unix', 'WordPress', 'Github']
 					},
 					{
 					 title:'Serveurs',
@@ -85,13 +85,13 @@
 			getContact : function() {
 				var contact = {
 					form : {
-						error   : 'Erreur lors de l\'envoi de l\'email. Veuillez réessayer.',
-						name    : 'Nom',
+						error   : 'Error try again, please.',
+						name    : 'Name',
 						email   : 'Email',
 						message : 'Message',
-						send    : 'Envoyer',
+						send    : 'Send',
 						confirm : {
-							part1 : 'Thenk you for your message!',
+							part1 : 'Thank you for your message!',
 							part2 : 'best regards',
 							back  : 'Back to the form »'
 						}
