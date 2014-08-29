@@ -66,7 +66,7 @@ var MY_RESUME = {};
 			embed_id: 'resume-timeline',
 			lang: lang,
 			start_at_end: true,
-			debug: false,
+			debug: true,
 			start_zoom_adjust: 0,
 			font: 'Rancho-Gudea'
 		});

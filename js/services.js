@@ -28,9 +28,21 @@
 			getTagCloud : function() {
 				var tagCloud = [
 					{label:'HTML5', level:1}, {label:'AJAX', level:1}, {label:'WordPress', level:1}, {label:'CSS3', level:0}, 
-					{label:'CSS', level:2}, {label:'Shell', level:1},{label:'Unix', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
+					{label:'Less', level:2}, {label:'Mixins', level:2}, {label:'CSS', level:2}, {label:'Shell', level:1},{label:'Unix', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
 					{label:'Javascript', level:2}, {label:'JQuery', level:1}, {label:'AngularJS', level:0}, {label:'JSON', level:1},
-					{label:'PHP', level:2}, {label:'Apache', level:0}
+					{label:'PHP', level:2}, {label:'MVC', level:1}, {label:'Grunt', level:1}, 
+          {label:'Regex', level:1},
+          {label:'ZSH', level:1},
+          {label:'Github', level:1},
+          {label:'terminal', level:1},
+          {label:'SEO', level:1},
+          {label:'Tmux', level:3},
+          {label:'Linux', level:2},
+          {label:'MAC', level:3},
+          {label:'Plugins WordPress', level:2},
+          {label:'Responsive Design', level:3},
+          {label:'Git', level:1},
+          {label:'Apache', level:0}
 				];
 				return tagCloud;
 			},
