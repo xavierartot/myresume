@@ -18,7 +18,7 @@ To use this template :
 Example of resume using this template :
 -------------------------------------------
 
-* http://www.nicolas-huguet.com / My resume of course !
+* http://flight-web.com/myresume/ My resume of course !
 
 Let's start doing your resume !
 -------------------------------------------
