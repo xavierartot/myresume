@@ -13,8 +13,8 @@
 					name             : 'Xavier Artot',
 					birthDate        : '12/06/1970',
 					startWorkingDate : '01/01/2009',
-					//experience       : "$1 years, $2 years experiences"
-					experience       : "$2 years experiences"
+					experience       : "$1 years, $2 years experiences"
+					//experience       : "$2 years experiences"
 				};
 				var age = utility.getDurationInYears(false, profileData.birthDate);
 				var workExperience = utility.getDurationInYears(true, profileData.startWorkingDate);
@@ -129,9 +129,10 @@
 			},
 			getTimeline : function(){
 				var timeline = {
-					lang    : 'fr',
+					lang    : 'en',
           content : 'https://docs.google.com/spreadsheet/pub?key=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&output=html'
-            //'https://docs.google.com/spreadsheet/pub?key=0Aj1DRa-P1mk8dExmZUxzY2VzbzFUWm1jMnZJS09oZ0E&output=html' 
+           //content :'https://docs.google.com/spreadsheet/pub?key=0Aj1DRa-P1mk8dExmZUxzY2VzbzFUWm1jMnZJS09oZ0E&output=html' 
+
 				}
 				return timeline;
 			},
@@ -148,29 +149,29 @@
 				var technos = {
 					img : [
 						{
-							src   : '/img/technos/angularjs.png',
+							src   : 'img/technos/angularjs.png',
 							title : 'AngularJS'
 						},
 						{
-							src   : '/img/technos/html5.png',
+							src   : 'img/technos/html5.png',
 							title : 'HTML5'
 						},
 						{
-							src   : '/img/technos/css3.png',
+							src   : 'img/technos/css3.png',
 							title : 'CSS3'
 						},
 						{
-							src   : '/img/technos/bootstrap.jpg',
+							src   : 'img/technos/bootstrap.jpg',
 							title : 'Twitter Bootstrap'
 						},
 						{
-							src   : '/img/technos/ascensorjs.jpg',
+							src   : 'img/technos/ascensorjs.jpg',
 							title : 'AscensorJS'
 						}
 					],
 					source : {
 						text     : 'Sources du site sur ',
-						link     : 'https://github.com/ivierartot'
+						link     : 'https://github.com/xavierartot'
 					}				
 				}
 				return technos;

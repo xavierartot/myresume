@@ -3,7 +3,6 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -30,7 +29,7 @@
 						<span class="resume-title" ng-bind="profile.name"></span>
 						<div >
 							<span class="pull-right nav-icon">
-								<a ng-href="{{links.twitter}}" target="_blank"><i class="text-info icon-twitter"></i></a>
+                <!--<a ng-href="{{links.twitter}}" target="_blank"><i class="text-info icon-twitter"></i></a>-->
 								<a ng-href="{{links.linkedin}}" target="_blank"><i class="text-info icon-linkedin"></i></a>
 								<a ng-href="{{links.github}}" target="_blank"><i class="text-info icon-github"></i></a>
 								<a ng-href="{{links.resume}}" target="_blank"><i class="text-info icon-paper-clip"></i></a>
@@ -165,9 +164,9 @@
 			<div>
 				<img ng-repeat="img in technos.img" src="{{img.src}}" title="{{img.title}}" alt="{{img.title}}">
 			</div>
-			<!--<div class="sourcesLink">
+			<div class="sourcesLink">
 				<small><em><span ng-bind="technos.source.text"></span><a ng-href="{{technos.source.link}}" target="_blank">github</a></em></small></span>
-    </div>-->
+    </div>
 		</footer>
 
 		<script src="js/vendor/jquery-1.10.1.min.js"></script>
@@ -177,7 +176,7 @@
 		<script src="js/vendor/jquery.ascensor.min.js" type="text/javascript"></script>	
 		<script src="components/timeline/compiled/js/storyjs-embed.js" type="text/javascript"></script>
 		
-    <script src="js/plugins.js"></script>
+    <!--<script src="js/plugins.js"></script>-->
     <script src="js/main.js"></script>
 		<script src="js/services.js"></script>
 		<script src="js/app.js"></script>
