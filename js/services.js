@@ -127,15 +127,15 @@
 				};
 				return nav;
 			},
-			getTimeline : function(){
-				var timeline = {
-					lang    : 'en',
-          content : 'https://docs.google.com/spreadsheet/pub?key=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&output=html'
-           //content :'https://docs.google.com/spreadsheet/pub?key=0Aj1DRa-P1mk8dExmZUxzY2VzbzFUWm1jMnZJS09oZ0E&output=html' 
+			//getTimeline : function(){
+			//	var timeline = {
+			//		lang    : 'en',
+      //    content : 'https://docs.google.com/spreadsheet/pub?key=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&output=html'
+      //     //content :'https://docs.google.com/spreadsheet/pub?key=0Aj1DRa-P1mk8dExmZUxzY2VzbzFUWm1jMnZJS09oZ0E&output=html' 
 
-				}
-				return timeline;
-			},
+			//	}
+			//	return timeline;
+			//},
 			getLinks : function(){
 				var links = {
 					github   : 'https://github.com/xavierartot',

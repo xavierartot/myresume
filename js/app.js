@@ -56,8 +56,8 @@
 		};
 		
 		// launch timeline
-		var timelineData = myResumeData.getTimeline();
-		timelineManager.launchTimeline(timelineData.content, timelineData.lang);
+		//var timelineData = myResumeData.getTimeline();
+		//timelineManager.launchTimeline(timelineData.content, timelineData.lang);
 		
 		// mail management	
 		var contactTemplates = mailManager.getContactTemplates();

@@ -31,46 +31,46 @@ var MY_RESUME = {};
 		}
 		return string;
 	}
-	MY_RESUME.launchTimeline = function(dataUrl, lang){
-	
-		function getHeight(height, minHeight){
-			if(height < minHeight){
-				return minHeight;
-			}
-			return height;
-		}
-		
-		//default height
-		var height = $(window).height() - 60;
-		var width = '100%';
-		var windowWidth = $(window).width();
-		//we redefine the size for the responsive
-		if(windowWidth <= 480){
-			height = getHeight(height, 1050);
-			width = 300;
-		} else if(windowWidth <= 640){
-			height = getHeight(height, 850);
-		} else if(windowWidth <= 1024){
-			height = getHeight(height, 680);
-		} else {
-			//we define a minimum height
-			height = getHeight(height, 580);
-		}
-		
-		// Timeline js
-		createStoryJS({
-			type: 'timeline',
-			width: width,
-			height: height,
-			source: dataUrl,
-			embed_id: 'resume-timeline',
-			lang: lang,
-			start_at_end: true,
-			debug: true,
-			start_zoom_adjust: 0,
-			font: 'Rancho-Gudea'
-		});
-	}
+	//MY_RESUME.launchTimeline = function(dataUrl, lang){
+	//
+	//	function getHeight(height, minHeight){
+	//		if(height < minHeight){
+	//			return minHeight;
+	//		}
+	//		return height;
+	//	}
+	//	
+	//	//default height
+	//	var height = $(window).height() - 60;
+	//	var width = '100%';
+	//	var windowWidth = $(window).width();
+	//	//we redefine the size for the responsive
+	//	if(windowWidth <= 480){
+	//		height = getHeight(height, 1050);
+	//		width = 300;
+	//	} else if(windowWidth <= 640){
+	//		height = getHeight(height, 850);
+	//	} else if(windowWidth <= 1024){
+	//		height = getHeight(height, 680);
+	//	} else {
+	//		//we define a minimum height
+	//		height = getHeight(height, 580);
+	//	}
+	//	
+	//	// Timeline js
+	//	createStoryJS({
+	//		type: 'timeline',
+	//		width: width,
+	//		height: height,
+	//		source: dataUrl,
+	//		embed_id: 'resume-timeline',
+	//		lang: lang,
+	//		start_at_end: true,
+	//		debug: true,
+	//		start_zoom_adjust: 0,
+	//		font: 'Rancho-Gudea'
+	//	});
+	//}
 	
 	$(document).ready(function() {
 	
