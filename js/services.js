@@ -30,7 +30,7 @@
 				var tagCloud = [
 					{label:'HTML5', level:1}, {label:'AJAX', level:1}, {label:'WordPress', level:1}, {label:'CSS3', level:0}, 
 					{label:'Less', level:2}, {label:'Mixins', level:2}, {label:'CSS', level:2}, {label:'Unix Shell', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
-					{label:'JavaScript', level:2}, {label:'JQuery', level:1}, {label:'AngularJS', level:1}, {label:'JSON', level:1},
+					{label:'JavaScript', level:2}, {label:'jQuery', level:1}, {label:'AngularJS', level:1}, {label:'JSON', level:1},
 					{label:'PHP', level:2}, {label:'MVC', level:1}, {label:'Grunt', level:1}, 
           {label:'Regex', level:1},{label:'PhoneGap', level:1},{label:'Mobile App', level:1},
           {label:'ZSH', level:1},{label:'GitHub', level:1},{label:'Terminal', level:1},
@@ -44,10 +44,10 @@
 				var skills = [
 					{
 					 title:'Web',
-					 specificSkills:['JavaScript', 'JQuery', 'AJAX', 'JSON', 'HTML5', 'CSS3', 'AngularJS',  'LESS', 'PHP', 'Grunt']
+					 specificSkills:['JavaScript', 'jQuery', 'AJAX', 'JSON', 'HTML5', 'CSS3', 'AngularJS',  'Less / Sass', 'PHP', 'Grunt']
 					},
 					{
-					 title:'Tools and Langages',
+					 title:'Tools and Languages',
 					 specificSkills:['Vim', 'Tmux', 'Git', 'Unix shell', 'WordPress', 'GitHub', 'Grunt' ]
 					},
 					{
@@ -63,7 +63,7 @@
 					 specificSkills:['PhoneGap','Twitter Bootstrap','AngularJS']
 					},
 					{
-					 title:'Systèmes',
+					 title:'Systems',
 					 specificSkills:['Mac OS', 'Debian Linux']
 					}
 				];

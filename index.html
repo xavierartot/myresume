@@ -62,7 +62,8 @@
 						<hr>				
 						<div class="row-fluid">
 							<div class="span8 offset2 skills-cloud">
-								<span ng-repeat="tag in tagCloud" ng-class="tagClass($index, tag.level)" ng-bind="tag.label"></span>
+                <span ng-repeat="tag in tagCloud" ng-class="tagClass($index, tag.level)" 
+                  ng-bind="tag.label"></span>
 							</div>
 						</div>
 					</div>
@@ -82,7 +83,9 @@
 									<tbody>
 										<tr ng-repeat="skill in skills | filter:query">
 											<td><span ng-class="labelClass($index)" ng-bind="skill.title"></span></td>
-											<td><span ng-repeat="specificSkill in skill.specificSkills | skillsFilter:query:skill.title" ng-bind="specificSkill"></span></td>
+                      <td><span 
+                          ng-repeat="specificSkill in skill.specificSkills | skillsFilter:query:skill.title" 
+                          ng-bind="specificSkill"></span></td>
 										</tr>
 									</tbody>
 								</table>
@@ -98,7 +101,10 @@
 					<div class="container-fluid">
 						<div class="row-fluid">
               <h1 id="_">
-                I'm working on this page!
+                I'm working on this page, visit my HitHub!
+                <a href="https://github.com/xavierartot" target="_blank">
+                  GitHub account
+                </a>
               </h1>
               <!-- <div class="span12" id="resume-timeline"></div> -->
 						</div>
