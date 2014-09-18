@@ -312,7 +312,13 @@ footer .sourcesLink{
 	margin-top:10px;
 }
 
-
+#career-content{
+ text-align: center;  
+}
+#career-content a{
+  display: block;
+  margin-top: 2%;
+}
 
 
 
