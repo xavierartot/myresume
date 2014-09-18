@@ -7,7 +7,7 @@ var MY_RESUME = {};
 			return false;
 		}
 		return value1.toLowerCase().indexOf(value2.toLowerCase()) != -1;
-	}
+	};
 	MY_RESUME.getDurationInYears = function(greater, startDate, endDate){
 		if(endDate === undefined){
 			endDate = new Date();
@@ -18,7 +18,7 @@ var MY_RESUME = {};
 			return Math.round(durationInDays/365);
 		}
 		return Math.floor(durationInDays/365);
-	}
+	};
 	// replace the parameters in the string by the values
 	// values : Array [value1, value2, ... value n]
 	// parameters in string : $1, $2, ... $n
@@ -30,7 +30,7 @@ var MY_RESUME = {};
 			string = string.replace(parameter, value);
 		}
 		return string;
-	}
+	};
 	//MY_RESUME.launchTimeline = function(dataUrl, lang){
 	//
 	//	function getHeight(height, minHeight){

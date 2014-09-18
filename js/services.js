@@ -9,12 +9,12 @@
 		return {
 			getProfile : function() {
 				var profileData = {
-					title            : 'Front End Developer !',
+					title            : 'Front End Developer',
 					name             : 'Xavier Artot',
 					birthDate        : '12/06/1970',
 					startWorkingDate : '01/01/2009',
 					//experience       : "$1 years, $2 years experiences"
-					experience       : "$2 years experiences"
+					experience       : "$2 years of experience"
 				};
 				var age = utility.getDurationInYears(false, profileData.birthDate);
 				var workExperience = utility.getDurationInYears(true, profileData.startWorkingDate);
@@ -29,21 +29,14 @@
 			getTagCloud : function() {
 				var tagCloud = [
 					{label:'HTML5', level:1}, {label:'AJAX', level:1}, {label:'WordPress', level:1}, {label:'CSS3', level:0}, 
-					{label:'Less', level:2}, {label:'Mixins', level:2}, {label:'CSS', level:2}, {label:'Shell', level:1},{label:'Unix', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
-					{label:'Javascript', level:2}, {label:'JQuery', level:1}, {label:'AngularJS', level:0}, {label:'JSON', level:1},
+					{label:'Less', level:2}, {label:'Mixins', level:2}, {label:'CSS', level:2}, {label:'Unix Shell', level:1}, {label:'SQL', level:0}, {label:'REST', level:0},
+					{label:'JavaScript', level:2}, {label:'JQuery', level:1}, {label:'AngularJS', level:1}, {label:'JSON', level:1},
 					{label:'PHP', level:2}, {label:'MVC', level:1}, {label:'Grunt', level:1}, 
-          {label:'Regex', level:1},
-          {label:'ZSH', level:1},
-          {label:'Github', level:1},
-          {label:'terminal', level:1},
-          {label:'SEO', level:1},
-          {label:'Tmux', level:3},
-          {label:'Linux', level:2},
-          {label:'MAC', level:3},
-          {label:'Plugins WordPress', level:2},
-          {label:'Responsive Design', level:3},
-          {label:'Git', level:1},
-          {label:'Apache', level:0}
+          {label:'Regex', level:1},{label:'PhoneGap', level:1},{label:'Mobile App', level:1},
+          {label:'ZSH', level:1},{label:'GitHub', level:1},{label:'Terminal', level:1},
+          {label:'Tmux', level:3},{label:'Linux', level:2},{label:'MAC', level:2},{label:'MySQL', level:1},
+          {label:'WordPress Plugins', level:2},{label:'Responsive Design', level:2},{label:'Git', level:1},
+          {label:'REST', level:0},{label:'Bootstrap', level:2},{label:'SEO', level:1},{label:'Apache', level:0}
 				];
 				return tagCloud;
 			},
@@ -51,27 +44,27 @@
 				var skills = [
 					{
 					 title:'Web',
-					 specificSkills:['Javascript', 'JQuery', 'AJAX', 'JSON', 'HTML5', 'CSS3', 'AngularJS', 'Twitter Bootstrap', 'LESS', 'PHP', 'Grunt']
+					 specificSkills:['JavaScript', 'JQuery', 'AJAX', 'JSON', 'HTML5', 'CSS3', 'AngularJS',  'LESS', 'PHP', 'Grunt']
 					},
 					{
-					 title:'Langages et outils',
-					 specificSkills:['Grunt', 'Vim', 'Git', 'shell Unix', 'WordPress', 'Github']
+					 title:'Tools and Langages',
+					 specificSkills:['Vim', 'Tmux', 'Git', 'Unix shell', 'WordPress', 'GitHub', 'Grunt' ]
 					},
 					{
-					 title:'Serveurs',
+					 title:'Servers',
 					 specificSkills:['Apache', 'NodeJS (lab)']
 					},
 					{
-					 title:'Base de donnees',
-					 specificSkills:['MySql', 'SQL']
+					 title:'Databases',
+					 specificSkills:['MySQL', 'SQL']
 					},
 					{
-					 title:'Méthodologies ',
-					 specificSkills:['UML']
+					 title:'Frameworks ',
+					 specificSkills:['PhoneGap','Twitter Bootstrap','AngularJS']
 					},
 					{
 					 title:'Systèmes',
-					 specificSkills:['Mac OS', 'Linux Debian']
+					 specificSkills:['Mac OS', 'Debian Linux']
 					}
 				];
 				return skills;
@@ -80,7 +73,7 @@
 				var hobbies = {
 					hobby1 : {
 						title : 'Sport',
-						desc1 : 'Swimming (every day) and soccer',
+						desc1 : 'Swimming, reading and cooking',
 						desc2 : ''
 					},
 					hobby2 : {
@@ -142,7 +135,7 @@
 					linkedin : 'https://www.linkedin.com/profile/view?id=329656356&trk=nav_responsive_tab_profile',
 					//twitter  : 'https://twitter.com/NicolasHuguet',
 					resume   : 'data/resume.pdf'
-				}
+				};
 				return links;
 			},
 			getTechnos : function(){
@@ -173,7 +166,7 @@
 						text     : 'Sources du site sur ',
 						link     : 'https://github.com/xavierartot'
 					}				
-				}
+				};
 				return technos;
 			}
 		};

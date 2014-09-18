@@ -6,7 +6,7 @@
 			var filteredSkills = $filter('filter')(skills, query);
 
 			// if the query corresponds to the title and the filtered skills are empty, we return all the skills
-			if(utility.contains(title, query) && filteredSkills.length == 0){
+			if(utility.contains(title, query) && filteredSkills.length === 0){
 				return skills;
 			}
 			return filteredSkills;
@@ -64,23 +64,23 @@
 		var mailSendingSuccess = function(){
 			$scope.emailSent = true;
 			$scope.contactTemplate = contactTemplates.contactConfirm;
-		}
+		};
 		var mailSendingError = function(){
 			$scope.emailSent = false;
-		}
+		};
 		
 		$scope.mail = {name:'', email:'', message:''};
 		$scope.contactTemplate = contactTemplates.contactForm;
 		$scope.emailSent = true;
 		$scope.submitContactForm = function(){
-			mailManager.submitContactForm($scope.mail, mailSendingSuccess, mailSendingError)
+			mailManager.submitContactForm($scope.mail, mailSendingSuccess, mailSendingError);
 		};
 		$scope.backToContactForm = function(){
-			for(key in $scope.mail){
+			for(var key in $scope.mail){
 				$scope.mail[key] = '';
 			}
 			$scope.contactTemplate = contactTemplates.contactForm;
-		}
+		};
 	});
 	
 })();
